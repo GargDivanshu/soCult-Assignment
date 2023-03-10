@@ -28,6 +28,7 @@ export default function Home() {
        
        <div className="gap-8 grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1">
         <UserInfo
+        // @ts-ignore
         className="mx-2 fixed"
         />
         <div className="h-min w-full">
@@ -65,6 +66,7 @@ export default function Home() {
       </div>
           </div>
         <Discover
+        // @ts-ignore
         className="mx-2"
         />
         
