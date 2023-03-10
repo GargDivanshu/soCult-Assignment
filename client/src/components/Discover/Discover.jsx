@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import { people } from './people';
-
+import { useRouter } from 'next/router'
 
 const Discover = () => {
+    const route = useRouter(); 
 
     const [friendOne, setFriendOne] = useState(false); 
     const [friendTwo, setFriendTwo] = useState(false);
@@ -54,7 +55,10 @@ whether we want to add them as friend directly to DB by associating it with thei
                     />
                     <div className=" mx-3 grid grid-cols-1 text-xs border-b-2 border-slate-300 border-inherit">
                     <span
-                    className="text-blue-400 "
+                    onClick={(e)=>{
+                        e.preventDefault() 
+                        route.push("/user")}}
+                    className="text-blue cursor-pointer hover:text-slate-600"
                     >John</span>
                     <span
                     onClick={
@@ -81,7 +85,10 @@ whether we want to add them as friend directly to DB by associating it with thei
                     />
                     <div className=" mx-3 grid grid-cols-1 text-xs border-b-2 border-slate-300 border-inherit">
                     <span
-                    className="text-blue-400 "
+                   onClick={(e)=>{
+                        e.preventDefault() 
+                        route.push("/user")}}
+                    className="text-blue cursor-pointer hover:text-slate-600"
                     >John</span>
                     <span
                     onClick={
@@ -108,7 +115,10 @@ whether we want to add them as friend directly to DB by associating it with thei
                     />
                     <div className=" mx-3 grid grid-cols-1 text-xs border-b-2 border-slate-300 border-inherit">
                     <span
-                    className="text-blue-400 "
+                    onClick={(e)=>{
+                        e.preventDefault() 
+                        route.push("/user")}}
+                    className="text-blue cursor-pointer hover:text-slate-600"
                     >John</span>
                     <span
                     onClick={
@@ -134,7 +144,10 @@ whether we want to add them as friend directly to DB by associating it with thei
                     />
                     <div className=" mx-3 grid grid-cols-1 text-xs border-b-2 border-slate-300 border-inherit">
                     <span
-                    className="text-blue-400 "
+                    onClick={(e)=>{
+                        e.preventDefault() 
+                        route.push("/user")}}
+                    className="text-blue cursor-pointer hover:text-slate-600"
                     >John</span>
                     <span
                     onClick={
